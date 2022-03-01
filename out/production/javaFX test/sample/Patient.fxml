@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="420.0" prefWidth="570.0" style="-fx-background-color: #483D8B;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Patient">
+   <children>
+      <ImageView fitHeight="368.0" fitWidth="522.0" layoutX="30.0" layoutY="38.0" opacity="0.22" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../vector-patient-shocked-large-excessive-medical-bill-stressed-180185029.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblPastor" layoutX="212.0" layoutY="14.0" text="Pastor Hospital" textFill="#fdfcfc">
+         <font>
+            <Font name="Times New Roman Bold" size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnTotalInvoice" layoutX="96.0" layoutY="82.0" mnemonicParsing="false" onAction="#pressBtnTotalInvoice" prefHeight="26.0" prefWidth="146.0" style="-fx-background-color: #4682B4;" text="View Total Invoice" textFill="#f8f5f5">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnInfoAndStatus" layoutX="321.0" layoutY="82.0" mnemonicParsing="false" onAction="#pressBtnInfoAndStatus" prefHeight="26.0" prefWidth="163.0" style="-fx-background-color: #4682B4;" text="Information and Status" textFill="#fffdfd">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Button>
+      <ListView fx:id="LVTotalInvoice" layoutX="57.0" layoutY="124.0" prefHeight="282.0" prefWidth="458.0" style="-fx-background-color: #483D8B;" visible="false" />
+      <ListView fx:id="LVInfoAndStatus" layoutX="55.0" layoutY="125.0" prefHeight="282.0" prefWidth="458.0" style="-fx-background-color: #483D8B;" visible="false" />
+   </children>
+</AnchorPane>

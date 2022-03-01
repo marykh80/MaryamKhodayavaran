@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="573.0" style="-fx-background-color: #483D8B;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Doctor">
+   <children>
+      <Label fx:id="lblPastor" layoutX="206.0" layoutY="24.0" text="Pastor Hospital" textFill="#fdf9f9">
+         <font>
+            <Font name="Times New Roman Bold" size="22.0" />
+         </font>
+      </Label>
+      <TabPane layoutX="78.0" layoutY="58.0" prefHeight="306.0" prefWidth="411.0" style="-fx-background-color: #4B0082;" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="tabPrescriptions" text="Prescriptions">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="276.0" prefWidth="422.0" style="-fx-background-color: #4B0082;">
+                     <children>
+                        <Label fx:id="lblDiseaseType" layoutX="32.0" layoutY="43.0" text="Disease Type" textFill="#ede321">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblMedication" layoutX="32.0" layoutY="104.0" text="Medication" textFill="#ede321">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtDiseaseType" layoutX="165.0" layoutY="44.0" prefHeight="26.0" prefWidth="183.0" promptText="Enter your text" />
+                        <TextField fx:id="txtMedication" layoutX="165.0" layoutY="107.0" prefHeight="26.0" prefWidth="184.0" promptText="Enter your text" />
+                        <Button fx:id="btnAddPrescriptions" layoutX="240.0" layoutY="188.0" mnemonicParsing="false" onAction="#pressAddPrescription" prefHeight="26.0" prefWidth="47.0" style="-fx-background-color: #4682B4;" text="Add">
+                           <font>
+                              <Font name="Arial" size="13.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab fx:id="tabSurgicalOperations" text="Surgical Operations">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="lblDate" layoutX="41.0" layoutY="40.0" text="Date of Surgery" textFill="#ede321">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblPPS" layoutX="41.0" layoutY="114.0" text="Postoperative patient status" textFill="#ede321">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtPPS" alignment="TOP_LEFT" layoutX="41.0" layoutY="138.0" prefHeight="62.0" prefWidth="343.0" promptText="Enter the patients' status" />
+                        <Label fx:id="lblRoom" layoutX="41.0" layoutY="78.0" text="Room No." textFill="#f0dc07">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtRoom" layoutX="186.0" layoutY="82.0" />
+                        <Button fx:id="btnAddSurgicalOperations" layoutX="179.0" layoutY="227.0" mnemonicParsing="false" onAction="#pressBtnSurgicalOperations" prefHeight="26.0" prefWidth="44.0" style="-fx-background-color: #4682B4;" text="Add">
+                           <font>
+                              <Font name="Arial" size="13.0" />
+                           </font>
+                        </Button>
+                        <TextField fx:id="txtDate" layoutX="186.0" layoutY="36.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

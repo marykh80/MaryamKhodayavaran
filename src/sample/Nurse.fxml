@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="420.0" prefWidth="570.0" style="-fx-background-color: #483D8B;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Nurse">
+   <children>
+      <Label fx:id="lblPastor" layoutX="205.0" layoutY="14.0" text="Pastor Hospital" textFill="#f8f3f3">
+         <font>
+            <Font name="Times New Roman Bold" size="22.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="380.0" fitWidth="542.0" layoutX="14.0" layoutY="47.0" opacity="0.26" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../41032892_m.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblCreateChannel" layoutX="55.0" layoutY="80.0" text="Create Channel for Patient &amp; Doctor" textFill="#f2dd1d">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblChannelDate" layoutX="42.0" layoutY="127.0" text="Channel Date" textFill="#ead536">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblRoomNo" layoutX="42.0" layoutY="230.0" text="Room No." textFill="#f0db41">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="txtChannelDate" layoutX="210.0" layoutY="122.0" prefHeight="26.0" prefWidth="149.0" promptText="Select a Date" />
+      <TextField fx:id="txtRoomNo" layoutX="210.0" layoutY="225.0" />
+      <Label fx:id="lblPrescribedDrugs" layoutX="42.0" layoutY="178.0" prefHeight="18.0" prefWidth="110.0" text="Prescribed Drugs" textAlignment="CENTER" textFill="#f2e30e">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblPatientHealthStatus" layoutX="42.0" layoutY="296.0" text="Patient's Health Status" textFill="#e3ce30">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtPatientHealthStatus" layoutX="210.0" layoutY="280.0" prefHeight="42.0" prefWidth="208.0" />
+      <TextField fx:id="txtPrescribedDrugs" layoutX="211.0" layoutY="174.0" />
+      <Button fx:id="btnAddChannel" layoutX="253.0" layoutY="347.0" mnemonicParsing="false" onAction="#pressBtnAddChannel" prefHeight="26.0" prefWidth="50.0" style="-fx-background-color: #4682B4;" text="Add">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

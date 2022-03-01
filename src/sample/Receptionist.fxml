@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="420.0" prefWidth="570.0" style="-fx-background-color: #483D8B;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Receptionist">
+   <children>
+      <Label fx:id="lblPastor" layoutX="211.0" layoutY="26.0" text="Pastor Hospital" textFill="#f8f3f3">
+         <font>
+            <Font name="Times New Roman Bold" size="22.0" />
+         </font>
+      </Label>
+      <TabPane layoutX="74.0" layoutY="59.0" prefHeight="338.0" prefWidth="413.0" style="-fx-background-color: #4B0082;" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="tabPatient" text="Patient&quot;s Board">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #4B0082;">
+                     <children>
+                        <Label fx:id="lblUsername" layoutX="28.0" layoutY="37.0" text="Fullname (Username)" textFill="#f5dc21">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblGender" layoutX="47.0" layoutY="114.0" text="Gender" textFill="#f5dc21">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblBirthdate" layoutX="41.0" layoutY="154.0" text="Birthdate" textFill="#f5dc21">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblDisease" layoutX="40.0" layoutY="191.0" text="Disease Type" textFill="#f5dc21">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblHistory" layoutX="42.0" layoutY="233.0" text="History of illness" textFill="#f5dc21">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtPatientUsername" layoutX="181.0" layoutY="32.0" />
+                        <TextField fx:id="txtGender" layoutX="180.0" layoutY="109.0" prefHeight="26.0" prefWidth="150.0" />
+                        <TextField fx:id="txtBirthdate" layoutX="181.0" layoutY="151.0" />
+                        <TextField fx:id="txtDisease" layoutX="180.0" layoutY="186.0" prefHeight="26.0" prefWidth="150.0" />
+                        <TextField fx:id="txtHistory" layoutX="180.0" layoutY="220.0" />
+                        <Button fx:id="btnAddInfo" layoutX="234.0" layoutY="267.0" mnemonicParsing="false" onAction="#pressBtnAddInfo" style="-fx-background-color: #4682B4;" text="Add">
+                           <font>
+                              <Font name="Arial" size="13.0" />
+                           </font>
+                        </Button>
+                        <Label fx:id="lblPassword" layoutX="51.0" layoutY="77.0" text="Password" textFill="#eacf1d">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <PasswordField fx:id="txtPatientPassword" layoutX="181.0" layoutY="72.0" prefHeight="26.0" prefWidth="149.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab fx:id="tabInvoice" text="Issue Invoice">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="lblDrugs" layoutX="44.0" layoutY="49.0" text="Drugs / Medicine" textFill="#e0e019">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblSurgical" layoutX="44.0" layoutY="105.0" text="Surgical Operations" textFill="#e0e019">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblExaminations" layoutX="44.0" layoutY="164.0" text="Examinations" textFill="#e0e019">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtDrugPrice" layoutX="185.0" layoutY="44.0" promptText="\$Price" />
+                        <TextField fx:id="txtSurgicalPrice" layoutX="185.0" layoutY="101.0" promptText="\$Price" />
+                        <TextField fx:id="txtExamPrice" layoutX="185.0" layoutY="160.0" promptText="\$Price" />
+                        <Button fx:id="btnAddPrice" layoutX="234.0" layoutY="239.0" mnemonicParsing="false" onAction="#PressBtnAddPrice" style="-fx-background-color: #4682B4;" text="Add">
+                           <font>
+                              <Font name="Arial" size="13.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
